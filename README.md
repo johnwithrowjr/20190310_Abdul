@@ -122,37 +122,257 @@ x <- read.csv("C:\\Users\\Owner\\Dropbox\\FRDA\\U_20190310_Abdul\\Git01\\survey_
 ##  $ Rep_queen_loss        : int  NA NA NA NA 1 NA NA NA NA NA ...
 ##   [list output truncated]
 ```
+### Education Levels
 
-![](README_files/figure-html/pressure-1.png)<!-- -->
+```r
+factorVariableHistogram(x$Education,c("Primary School","Middle School","Secondary School","University","Self-Taught"),0.75,"Education Levels")
+```
+
+![](README_files/figure-html/edlevels-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Histogram Categories and Frequencies"
+```
 
 ```
 ## x
 ##  1  2  3  4  5 
 ##  2  8 43 55  1
 ```
+### Type of Beekeeper
 
-![](README_files/figure-html/pressure-2.png)<!-- -->
+```r
+factorVariableHistogram(x$Beek_type,c("Hobby","Semi-Professional","Professional","Other"),0.75,"Type of Beekeper")
+```
+
+![](README_files/figure-html/beekeeper-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Histogram Categories and Frequencies"
+```
 
 ```
 ## x
 ##  1  2  3  4 
 ## 48 37 23  1
 ```
+### Beekeeper Experience
 
-![](README_files/figure-html/pressure-3.png)<!-- -->
+```r
+quantitativeVariableHistogram(x$Beek_years,"Years",0.75,"Beekeeper Experience")
+```
+
+![](README_files/figure-html/experience-1.png)<!-- -->
 
 ```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Mean"
 ## [1] 20.75229
+## [1] "Quartiles"
 ##   0%  25%  50%  75% 100% 
 ##    2   14   20   27   45
 ```
+### Beekeeping Purpose
 
-![](README_files/figure-html/pressure-4.png)<!-- -->
+```r
+factorVariableHistogram(x$Beek_purpose,c("To Produce Honey","Breed and Sell Bees","Both of the Above"),0.75,"Beekeeping Purpose")
+```
+
+![](README_files/figure-html/purpose-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Histogram Categories and Frequencies"
+```
 
 ```
 ## x
 ##  1  2  3 
 ## 54  1 54
+```
+### Apiary Distance
+
+```r
+factorVariableHistogram(x$Api_15km,c("Yes","No"),0.75,"Distance Between Apiaries within 15km")
+```
+
+![](README_files/figure-html/api_dist-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Histogram Categories and Frequencies"
+```
+
+```
+## x
+##   1   2 
+## 108   1
+```
+### Main Apiary Environment
+
+```r
+factorVariableHistogram(x$Api_env,c("Forest/Woodland","Cultivated Field","Orchard"),0.75,"Main Apiary Environment")
+```
+
+![](README_files/figure-html/api_mainenv-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Histogram Categories and Frequencies"
+```
+
+```
+## x
+##  1  2  3 
+## 73 34  1
+```
+### Immediate Apiary Environment
+
+```r
+factorVariableHistogram(x$Api_loc_type,c("Sunny","Shaded","Sheltered/Closed Place"),0.75,"Immediate Apiary Environment")
+```
+
+![](README_files/figure-html/api_env-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Histogram Categories and Frequencies"
+```
+
+```
+## x
+##  1  2  3 
+## 38 69  1
+```
+### Number of Colonies - Spring 2017
+
+```r
+quantitativeVariableHistogram(x$Cols__Spr17,"Number of Colonies",0.75,"Number of Colonies - Spring 2017")
+```
+
+![](README_files/figure-html/numSpring2017-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Mean"
+## [1] 575.4587
+## [1] "Quartiles"
+##   0%  25%  50%  75% 100% 
+##  155  360  540  710 1600
+```
+### Number of Colonies - Summer 2017
+
+```r
+quantitativeVariableHistogram(x$Cols_Sum17,"Number of Colonies",0.75,"Number of Colonies - Summer 2017")
+```
+
+![](README_files/figure-html/numSummer2017-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Mean"
+## [1] 569.9541
+## [1] "Quartiles"
+##   0%  25%  50%  75% 100% 
+##  150  350  500  750 1500
+```
+### Number of Colonies - Autumn 2017
+
+```r
+quantitativeVariableHistogram(x$Cols_Aut17,"Number of Colonies",0.75,"Number of Colonies - Autumn 2017")
+```
+
+![](README_files/figure-html/numAutumn2017-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Mean"
+## [1] 558.9817
+## [1] "Quartiles"
+##   0%  25%  50%  75% 100% 
+##  149  350  500  700 1300
+```
+### Number of Colonies - Winter 2017-18
+
+```r
+quantitativeVariableHistogram(x$Cols_Win1718,"Number of Colonies",0.75,"Number of Colonies - Winter 2017-18")
+```
+
+![](README_files/figure-html/numWinter2017-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 108
+## [1] "Mean"
+## [1] 556.9444
+## [1] "Quartiles"
+##   0%  25%  50%  75% 100% 
+##  140  380  500  700 1300
+```
+### Number of Colonies - Spring 2018
+
+```r
+quantitativeVariableHistogram(x$Cols_Spr18,"Number of Colonies",0.75,"Number of Colonies - Spring 2018")
+```
+
+![](README_files/figure-html/numSpring2018-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Mean"
+## [1] 579.4037
+## [1] "Quartiles"
+##   0%  25%  50%  75% 100% 
+##  135  400  540  720 1700
+```
+### Have you observed any losses of production colonies during the period from 2017 to 2018?
+
+```r
+factorVariableHistogram(x$Lost_cols1718,c("Yes","No"),0.75,"Have you observed any losses of production colonies\nduring the period from 2017 to 2018?")
+```
+
+![](README_files/figure-html/lostYN-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Histogram Categories and Frequencies"
+```
+
+```
+## x
+##  1  2 
+## 91 18
+```
+### Number of Losses - Spring 2017
+
+```r
+quantitativeVariableHistogram(x$Lost_Spr17,"Number of Colonies",0.75,"Number of Colonies Lost - Spring 2017")
+```
+
+![](README_files/figure-html/lossSpring2017-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 91
+## [1] "Mean"
+## [1] 53.18681
+## [1] "Quartiles"
+##   0%  25%  50%  75% 100% 
+##    0   30   50   70  150
 ```
 
 
