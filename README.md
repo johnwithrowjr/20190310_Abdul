@@ -374,5 +374,373 @@ quantitativeVariableHistogram(x$Lost_Spr17,"Number of Colonies",0.75,"Number of 
 ##   0%  25%  50%  75% 100% 
 ##    0   30   50   70  150
 ```
+### Number of Losses - Summer 2017
+
+```r
+quantitativeVariableHistogram(x$Lost_Sum17,"Number of Colonies",0.75,"Number of Colonies Lost - Summer 2017")
+```
+
+![](README_files/figure-html/lossSummer2017-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 91
+## [1] "Mean"
+## [1] 78.02198
+## [1] "Quartiles"
+##   0%  25%  50%  75% 100% 
+##   20   50   70  100  300
+```
+### Number of Losses - Autumn 2017
+
+```r
+quantitativeVariableHistogram(x$Lost_Aut17,"Number of Colonies",0.75,"Number of Colonies Lost - Autumn 2017")
+```
+
+![](README_files/figure-html/lossAutumn2017-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 91
+## [1] "Mean"
+## [1] 55.35165
+## [1] "Quartiles"
+##   0%  25%  50%  75% 100% 
+##   10   30   50   70  300
+```
+### Number of Losses - Winter 2017-18
+
+```r
+quantitativeVariableHistogram(x$Lost_Win1718,"Number of Colonies",0.75,"Number of Colonies Lost - Winter 2017-18")
+```
+
+![](README_files/figure-html/lossWinter201718-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 91
+## [1] "Mean"
+## [1] 50.43956
+## [1] "Quartiles"
+##   0%  25%  50%  75% 100% 
+##   10   30   45   65  200
+```
+### Number of Losses - Spring 2018
+
+```r
+quantitativeVariableHistogram(x$Lost_Spr18,"Number of Colonies",0.75,"Number of Colonies Lost - Spring 2018")
+```
+
+![](README_files/figure-html/lossSpring2018-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 91
+## [1] "Mean"
+## [1] 45.71429
+## [1] "Quartiles"
+##    0%   25%   50%   75%  100% 
+##   0.0  27.5  40.0  60.0 140.0
+```
+### Causes of Lost Colonies
+
+```r
+x$Cause_V <- sapply(x$Cause_V,function(x){if(is.na(x)){res<-0}else{res<-x}})
+x$Cause_D <- sapply(x$Cause_D,function(x){if(is.na(x)){res<-0}else{res<-x}})
+x$Cause_ExW <- sapply(x$Cause_ExW,function(x){if(is.na(x)){res<-0}else{res<-x}})
+x$Cause_QP <- sapply(x$Cause_QP,function(x){if(is.na(x)){res<-0}else{res<-x}})
+x$Cause_St <- sapply(x$Cause_St,function(x){if(is.na(x)){res<-0}else{res<-x}})
+x$Cause_Oth <- sapply(x$Cause_Oth,function(x){if(is.na(x)){res<-0}else{res<-x}})
+sum(x$Cause_V[!is.na(x$Cause_V)])
+```
+
+```
+## [1] 82
+```
+
+```r
+sum(x$Cause_D[!is.na(x$Cause_D)])
+```
+
+```
+## [1] 47
+```
+
+```r
+sum(x$Cause_ExW[!is.na(x$Cause_ExW)])
+```
+
+```
+## [1] 35
+```
+
+```r
+sum(x$Cause_QP[!is.na(x$Cause_QP)])
+```
+
+```
+## [1] 12
+```
+
+```r
+sum(x$Cause_St[!is.na(x$Cause_St)])
+```
+
+```
+## [1] 18
+```
+
+```r
+sum(x$Cause_Oth[!is.na(x$Cause_Oth)])
+```
+
+```
+## [1] 0
+```
+
+```r
+table(x$Cause_V,x$Cause_D)
+```
+
+```
+##    
+##      0  1
+##   0 23  4
+##   1 39 43
+```
+
+```r
+table(x$Cause_V,x$Cause_ExW)
+```
+
+```
+##    
+##      0  1
+##   0 22  5
+##   1 52 30
+```
+
+```r
+table(x$Cause_V,x$Cause_QP)
+```
+
+```
+##    
+##      0  1
+##   0 27  0
+##   1 70 12
+```
+
+```r
+table(x$Cause_V,x$Cause_St)
+```
+
+```
+##    
+##      0  1
+##   0 25  2
+##   1 66 16
+```
+
+```r
+table(x$Cause_D,x$Cause_ExW)
+```
+
+```
+##    
+##      0  1
+##   0 37 25
+##   1 37 10
+```
+
+```r
+table(x$Cause_D,x$Cause_QP)
+```
+
+```
+##    
+##      0  1
+##   0 56  6
+##   1 41  6
+```
+
+```r
+table(x$Cause_D,x$Cause_St)
+```
+
+```
+##    
+##      0  1
+##   0 50 12
+##   1 41  6
+```
+
+```r
+table(x$Cause_ExW,x$Cause_QP)
+```
+
+```
+##    
+##      0  1
+##   0 63 11
+##   1 34  1
+```
+
+```r
+table(x$Cause_ExW,x$Cause_St)
+```
+
+```
+##    
+##      0  1
+##   0 60 14
+##   1 31  4
+```
+
+```r
+table(x$Cause_QP,x$Cause_St)
+```
+
+```
+##    
+##      0  1
+##   0 80 17
+##   1 11  1
+```
+### Did you migrate any of your colonies at least once for honey production or pollination or other reasons in 2017?
+
+```r
+factorVariableHistogram(x$Migrate,c("Yes","No"),0.75,"Did you migrate any of your colonies at least once\nfor honey production or pollination or other reasons in 2017?")
+```
+
+![](README_files/figure-html/migrate-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Histogram Categories and Frequencies"
+```
+
+```
+## x
+##  1  2 
+## 98 10
+```
+### Total Honey Production
+
+```r
+quantitativeVariableHistogram(x$Honey_kg,"Kilograms",0.75,"Honey Production")
+```
+
+![](README_files/figure-html/honey-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 108
+## [1] "Mean"
+## [1] 889.3519
+## [1] "Quartiles"
+##   0%  25%  50%  75% 100% 
+##  200  575  800  950 5000
+```
+### Approximately what proportion of brood combs did you replace with comb foundation per colony in 2017?
+
+```r
+factorVariableHistogram(x$Broodcomb_rep,c("0%","1-30%","31-50%"),0.75,"Approximately what proportion of brood combs\ndid you replace with comb foundation per colony in 2017?")
+```
+
+![](README_files/figure-html/brood_combs-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Histogram Categories and Frequencies"
+```
+
+```
+## x
+##  1  2  3 
+## 22 64 22
+```
+### Do you keep your bees in an area where Varroa has still not been detected?
+
+```r
+factorVariableHistogram(x$Varroa_not_det,c("Yes","No","Don't Know"),0.75,"Do you keep your bees in an area\nwhere Varroa has still not been detected?")
+```
+
+![](README_files/figure-html/varroa-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Histogram Categories and Frequencies"
+```
+
+```
+## x
+##  1  2  3 
+## 74 13 21
+```
+### Have you monitored your colonies for Varroa during the period April 2017-April 2018?
+
+```r
+factorVariableHistogram(x$Varroa_monitor,c("Yes","No","Don't Know / Not Applicable"),0.75,"Have you monitored your colonies for Varroa\nduring the period April 2017-April 2018?")
+```
+
+![](README_files/figure-html/Varroa_monitor-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Histogram Categories and Frequencies"
+```
+
+```
+## x
+##  1  2  3 
+## 92  6 10
+```
+### Have you treated your colonies against Varroa during the period April 2017-April 2018?
+
+```r
+factorVariableHistogram(x$Varroa_treated,c("Yes","No","Don't Know / Not Applicable"),0.75,"Have you treated your colonies against Varroa\nduring the period April 2017-April 2018?")
+```
+
+![](README_files/figure-html/Varroa_treated-1.png)<!-- -->
+
+```
+## [1] "Number of Non-Missing Data Items"
+## [1] 109
+## [1] "Histogram Categories and Frequencies"
+```
+
+```
+## x
+##  1  2  3 
+## 95 12  1
+```
+### Have you treated your colonies against Varroa during the period April 2017-April 2018?
+
+```r
+monthValue <- numeric(0)
+monthValue <- c(monthValue,sum(x$V_monitor_start_Apr17[!is.na(x$V_monitor_start_Apr17)]))
+monthValue <- c(monthValue,sum(x$V_monitor_start_May17[!is.na(x$V_monitor_start_May17)]))
+monthValue <- c(monthValue,sum(x$V_monitor_start_Jun17[!is.na(x$V_monitor_start_Jun17)]))
+monthValue <- c(monthValue,sum(x$V_monitor_start_Jul17[!is.na(x$V_monitor_start_Jul17)]))
+monthValue <- c(monthValue,sum(x$V_monitor_start_Aug17[!is.na(x$V_monitor_start_Aug17)]))
+monthValue <- c(monthValue,sum(x$V_monitor_start_Sep.17[!is.na(x$V_monitor_start_Sep.17)]))
+monthValue <- c(monthValue,sum(x$V_monitor_start_Oct17[!is.na(x$V_monitor_start_Oct17)]))
+monthValue <- c(monthValue,sum(x$V_monitor_start_Nov17[!is.na(x$V_monitor_start_Nov17)]))
+monthValue <- c(monthValue,sum(x$V_monitor_start_Dec17[!is.na(x$V_monitor_start_Dec17)]))
+monthValue <- c(monthValue,sum(x$V_monitor_start_Jan18[!is.na(x$V_monitor_start_Jan18)]))
+monthValue <- c(monthValue,sum(x$V_monitor_start_Feb18[!is.na(x$V_monitor_start_Feb18)]))
+monthValue <- c(monthValue,sum(x$V_monitor_start_Mar18[!is.na(x$V_monitor_start_Mar18)]))
+monthValue <- c(monthValue,sum(x$V_monitor_start_Apr18[!is.na(x$V_monitor_start_Apr18)]))
+months <- c("Apr17","May17","Jun17","Jul17","Aug17","Spt17","Oct17","Nov17","Dec17","Jan18","Feb18","Mar18","Apr18")
+barplot(monthValue,names.arg=months,cex.names=0.6)
+```
+
+![](README_files/figure-html/months-1.png)<!-- -->
+
 
 
