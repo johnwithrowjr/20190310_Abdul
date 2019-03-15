@@ -112,12 +112,13 @@ x <- read.csv("C:\\Users\\Owner\\Dropbox\\FRDA\\U_20190310_Abdul\\Git01\\survey_
 ### Education Levels
 
 ```r
-factorVariableHistogram(x$Education,c("Primary School","Middle School","Secondary School","University","Self-Taught"),0.75,1.33,0.04,"Education Levels")
+factorVariableHistogram(x$Education,c("Primary School","Middle School","Secondary School","University","Self-Taught"),0.75,1.33,0.04,"Education Levels","Histogram of responses to question 1.")
 ```
 
 ![](README_files/figure-html/edlevels-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 1."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -131,12 +132,13 @@ factorVariableHistogram(x$Education,c("Primary School","Middle School","Secondar
 ### Type of Beekeeper
 
 ```r
-factorVariableHistogram(x$Beek_type,c("Hobby","Semi-Professional","Professional","Other"),0.75,1.33,0.04,"Type of Beekeper")
+factorVariableHistogram(x$Beek_type,c("Hobby","Semi-Professional","Professional","Other"),0.75,1.33,0.04,"Type of Beekeper","Histogram of responses to question 3.")
 ```
 
 ![](README_files/figure-html/beekeeper-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 3."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -150,12 +152,13 @@ factorVariableHistogram(x$Beek_type,c("Hobby","Semi-Professional","Professional"
 ### Beekeeper Experience
 
 ```r
-quantitativeVariableHistogram(x$Beek_years,"Years",0.75,1.33,0.04,"Beekeeper Experience")
+quantitativeVariableHistogram(x$Beek_years,"Years",0.75,1.33,0.04,"Beekeeper Experience","Histogram of responses to question 4.")
 ```
 
 ![](README_files/figure-html/experience-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 4."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Mean"
@@ -167,12 +170,13 @@ quantitativeVariableHistogram(x$Beek_years,"Years",0.75,1.33,0.04,"Beekeeper Exp
 ### Beekeeping Purpose
 
 ```r
-factorVariableHistogram(x$Beek_purpose,c("To Produce Honey","Breed and Sell Bees","Both of the Above"),0.75,1.33,0.04,"Beekeeping Purpose")
+factorVariableHistogram(x$Beek_purpose,c("To Produce Honey","Breed and Sell Bees","Both of the Above"),0.75,1.33,0.04,"Beekeeping Purpose","Histogram of responses to question 6.")
 ```
 
 ![](README_files/figure-html/purpose-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 6."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -186,12 +190,13 @@ factorVariableHistogram(x$Beek_purpose,c("To Produce Honey","Breed and Sell Bees
 ### Apiary Distance
 
 ```r
-factorVariableHistogram(x$Api_15km,c("Yes","No"),0.75,1.33,0.04,"Distance Between Apiaries within 15km")
+factorVariableHistogram(x$Api_15km,c("Yes","No"),0.75,1.33,0.04,"Distance Between Apiaries within 15km","Histogram of responses to question 10.")
 ```
 
 ![](README_files/figure-html/api_dist-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 10."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -205,12 +210,13 @@ factorVariableHistogram(x$Api_15km,c("Yes","No"),0.75,1.33,0.04,"Distance Betwee
 ### Main Apiary Environment
 
 ```r
-factorVariableHistogram(x$Api_env,c("Forest/Woodland","Cultivated Field","Orchard"),0.75,1.33,0.04,"Main Apiary Environment")
+factorVariableHistogram(x$Api_env,c("Forest/Woodland","Cultivated Field","Orchard"),0.75,1.33,0.04,"Main Apiary Environment","Histogram of responses to question 11.")
 ```
 
 ![](README_files/figure-html/api_mainenv-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 11."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -224,12 +230,13 @@ factorVariableHistogram(x$Api_env,c("Forest/Woodland","Cultivated Field","Orchar
 ### Immediate Apiary Environment
 
 ```r
-factorVariableHistogram(x$Api_loc_type,c("Sunny","Shaded","Sheltered/Closed Place"),0.75,1.33,0.04,"Immediate Apiary Environment")
+factorVariableHistogram(x$Api_loc_type,c("Sunny","Shaded","Sheltered/Closed Place"),0.75,1.33,0.04,"Immediate Apiary Environment","Histogram of responses to question 12.")
 ```
 
 ![](README_files/figure-html/api_env-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 12."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -243,12 +250,13 @@ factorVariableHistogram(x$Api_loc_type,c("Sunny","Shaded","Sheltered/Closed Plac
 ### Number of Colonies - Spring 2017
 
 ```r
-quantitativeVariableHistogram(x$Cols__Spr17,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies - Spring 2017")
+quantitativeVariableHistogram(x$Cols__Spr17,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies - Spring 2017","Histogram of responses to question 13a.")
 ```
 
 ![](README_files/figure-html/numSpring2017-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 13a."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Mean"
@@ -260,12 +268,13 @@ quantitativeVariableHistogram(x$Cols__Spr17,"Number of Colonies",0.75,1.33,0.04,
 ### Number of Colonies - Summer 2017
 
 ```r
-quantitativeVariableHistogram(x$Cols_Sum17,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies - Summer 2017")
+quantitativeVariableHistogram(x$Cols_Sum17,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies - Summer 2017","Histogram of responses to question 13b.")
 ```
 
 ![](README_files/figure-html/numSummer2017-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 13b."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Mean"
@@ -277,12 +286,13 @@ quantitativeVariableHistogram(x$Cols_Sum17,"Number of Colonies",0.75,1.33,0.04,"
 ### Number of Colonies - Autumn 2017
 
 ```r
-quantitativeVariableHistogram(x$Cols_Aut17,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies - Autumn 2017")
+quantitativeVariableHistogram(x$Cols_Aut17,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies - Autumn 2017","Histogram of responses to question 13c.")
 ```
 
 ![](README_files/figure-html/numAutumn2017-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 13c."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Mean"
@@ -294,12 +304,13 @@ quantitativeVariableHistogram(x$Cols_Aut17,"Number of Colonies",0.75,1.33,0.04,"
 ### Number of Colonies - Winter 2017-18
 
 ```r
-quantitativeVariableHistogram(x$Cols_Win1718,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies - Winter 2017-18")
+quantitativeVariableHistogram(x$Cols_Win1718,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies - Winter 2017-18","Histogram of responses to question 13d.")
 ```
 
 ![](README_files/figure-html/numWinter2017-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 13d."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 108
 ## [1] "Mean"
@@ -311,12 +322,13 @@ quantitativeVariableHistogram(x$Cols_Win1718,"Number of Colonies",0.75,1.33,0.04
 ### Number of Colonies - Spring 2018
 
 ```r
-quantitativeVariableHistogram(x$Cols_Spr18,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies - Spring 2018")
+quantitativeVariableHistogram(x$Cols_Spr18,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies - Spring 2018","Histogram of responses to question 13e.")
 ```
 
 ![](README_files/figure-html/numSpring2018-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 13e."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Mean"
@@ -328,12 +340,13 @@ quantitativeVariableHistogram(x$Cols_Spr18,"Number of Colonies",0.75,1.33,0.04,"
 ### Have you observed any losses of production colonies during the period from 2017 to 2018?
 
 ```r
-factorVariableHistogram(x$Lost_cols1718,c("Yes","No"),0.75,1.33,0.04,"Have you observed any losses of production colonies\nduring the period from 2017 to 2018?")
+factorVariableHistogram(x$Lost_cols1718,c("Yes","No"),0.75,1.33,0.04,"Have you observed any losses of production colonies\nduring the period from 2017 to 2018?","Histogram of responses to question 14.")
 ```
 
 ![](README_files/figure-html/lostYN-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 14."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -347,12 +360,13 @@ factorVariableHistogram(x$Lost_cols1718,c("Yes","No"),0.75,1.33,0.04,"Have you o
 ### Number of Losses - Spring 2017
 
 ```r
-quantitativeVariableHistogram(x$Lost_Spr17,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies Lost - Spring 2017")
+quantitativeVariableHistogram(x$Lost_Spr17,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies Lost - Spring 2017","Histogram of responses to question 14a response a.")
 ```
 
 ![](README_files/figure-html/lossSpring2017-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 14a response a."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 91
 ## [1] "Mean"
@@ -364,12 +378,13 @@ quantitativeVariableHistogram(x$Lost_Spr17,"Number of Colonies",0.75,1.33,0.04,"
 ### Number of Losses - Summer 2017
 
 ```r
-quantitativeVariableHistogram(x$Lost_Sum17,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies Lost - Summer 2017")
+quantitativeVariableHistogram(x$Lost_Sum17,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies Lost - Summer 2017","Histogram of responses to question 14a response b.")
 ```
 
 ![](README_files/figure-html/lossSummer2017-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 14a response b."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 91
 ## [1] "Mean"
@@ -381,12 +396,13 @@ quantitativeVariableHistogram(x$Lost_Sum17,"Number of Colonies",0.75,1.33,0.04,"
 ### Number of Losses - Autumn 2017
 
 ```r
-quantitativeVariableHistogram(x$Lost_Aut17,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies Lost - Autumn 2017")
+quantitativeVariableHistogram(x$Lost_Aut17,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies Lost - Autumn 2017","Histogram of responses to question 14a response c.")
 ```
 
 ![](README_files/figure-html/lossAutumn2017-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 14a response c."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 91
 ## [1] "Mean"
@@ -398,12 +414,13 @@ quantitativeVariableHistogram(x$Lost_Aut17,"Number of Colonies",0.75,1.33,0.04,"
 ### Number of Losses - Winter 2017-18
 
 ```r
-quantitativeVariableHistogram(x$Lost_Win1718,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies Lost - Winter 2017-18")
+quantitativeVariableHistogram(x$Lost_Win1718,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies Lost - Winter 2017-18","Histogram of responses to question 14a response d.")
 ```
 
 ![](README_files/figure-html/lossWinter201718-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 14a response d."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 91
 ## [1] "Mean"
@@ -415,12 +432,13 @@ quantitativeVariableHistogram(x$Lost_Win1718,"Number of Colonies",0.75,1.33,0.04
 ### Number of Losses - Spring 2018
 
 ```r
-quantitativeVariableHistogram(x$Lost_Spr18,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies Lost - Spring 2018")
+quantitativeVariableHistogram(x$Lost_Spr18,"Number of Colonies",0.75,1.33,0.04,"Number of Colonies Lost - Spring 2018","Histogram of responses to question 14a response e.")
 ```
 
 ![](README_files/figure-html/lossSpring2018-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 14a response e."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 91
 ## [1] "Mean"
@@ -438,54 +456,62 @@ x$Cause_ExW <- sapply(x$Cause_ExW,function(x){if(is.na(x)){res<-0}else{res<-x}})
 x$Cause_QP <- sapply(x$Cause_QP,function(x){if(is.na(x)){res<-0}else{res<-x}})
 x$Cause_St <- sapply(x$Cause_St,function(x){if(is.na(x)){res<-0}else{res<-x}})
 x$Cause_Oth <- sapply(x$Cause_Oth,function(x){if(is.na(x)){res<-0}else{res<-x}})
-sum(x$Cause_V[!is.na(x$Cause_V)])
+print(paste("Number of Colonies Lost to Varroa:",sum(x$Cause_V[!is.na(x$Cause_V)])))
 ```
 
 ```
-## [1] 82
-```
-
-```r
-sum(x$Cause_D[!is.na(x$Cause_D)])
-```
-
-```
-## [1] 47
+## [1] "Number of Colonies Lost to Varroa: 82"
 ```
 
 ```r
-sum(x$Cause_ExW[!is.na(x$Cause_ExW)])
+print(paste("Number of Colonies Lost to Disease:",sum(x$Cause_D[!is.na(x$Cause_D)])))
 ```
 
 ```
-## [1] 35
-```
-
-```r
-sum(x$Cause_QP[!is.na(x$Cause_QP)])
-```
-
-```
-## [1] 12
+## [1] "Number of Colonies Lost to Disease: 47"
 ```
 
 ```r
-sum(x$Cause_St[!is.na(x$Cause_St)])
+print(paste("Number of Colonies Lost to Queen Problems:",sum(x$Cause_ExW[!is.na(x$Cause_ExW)])))
 ```
 
 ```
-## [1] 18
-```
-
-```r
-sum(x$Cause_Oth[!is.na(x$Cause_Oth)])
-```
-
-```
-## [1] 0
+## [1] "Number of Colonies Lost to Queen Problems: 35"
 ```
 
 ```r
+print(paste("Number of Colonies Lost to Starvation:",sum(x$Cause_QP[!is.na(x$Cause_QP)])))
+```
+
+```
+## [1] "Number of Colonies Lost to Starvation: 12"
+```
+
+```r
+print(paste("Number of Colonies Lost to Extreme weather:",sum(x$Cause_St[!is.na(x$Cause_St)])))
+```
+
+```
+## [1] "Number of Colonies Lost to Extreme weather: 18"
+```
+
+```r
+print(paste("Number of Colonies Lost to Other:",sum(x$Cause_Oth[!is.na(x$Cause_Oth)])))
+```
+
+```
+## [1] "Number of Colonies Lost to Other: 0"
+```
+
+```r
+tableCreation <- function(x,y,xlab,ylab,caption) {
+z <- table(x,y)
+print(paste("                      ",xlab))
+print(paste("             |  Without |    With |"))
+print(paste(ylab,"Without |",z[1,1],"|",z[1,2],"|"))
+print(paste(ylab,"With    |",z[2,1],"|",z[2,2],"|"))
+print(paste("Statistical Description:",caption))
+}
 table(x$Cause_V,x$Cause_D)
 ```
 
@@ -594,15 +620,107 @@ table(x$Cause_QP,x$Cause_St)
 ##   0 80 17
 ##   1 11  1
 ```
+### Formatted Contingency Tables for Responses to Question 14b
+|                 |            |         |
+|-----------------|------------|---------|
+|                 |         Disease      |
+|          Varroa | Without    |  With   |
+|         Without |  23        |   4     |
+|            With |  39        |  43     |
+|-----------------|------------|---------|
+Statistical Description:  Contingency table showing the co-occurrence of Varroa and disease according to reponses to question 14b.
+
+|                 |            |         |
+|-----------------|------------|---------|
+|                 |    Extreme Weather   |
+|          Varroa | Without    |  With   |
+|         Without |  22        |   5     |
+|            With |  52        |  30     |
+|-----------------|------------|---------|
+Statistical Description:  Contingency table showing the co-occurrence of Varroa and extreme weather according to reponses to question 14b.
+
+|                 |            |         |
+|-----------------|------------|---------|
+|                 |    Queen Problems    |
+|          Varroa | Without    |  With   |
+|         Without |  27        |   0     |
+|            With |  70        |  12     |
+|-----------------|------------|---------|
+Statistical Description:  Contingency table showing the co-occurrence of Varroa and queen problems according to reponses to question 14b.
+
+|                 |            |         |
+|-----------------|------------|---------|
+|                 |    Starvation        |
+|          Varroa | Without    |  With   |
+|         Without |  25        |   2     |
+|            With |  66        |  16     |
+|-----------------|------------|---------|
+Statistical Description:  Contingency table showing the co-occurrence of Varroa and starvation according to reponses to question 14b.
+
+|                 |            |         |
+|-----------------|------------|---------|
+|                 |    Extreme Weather   |
+|         Disease | Without    |  With   |
+|         Without |  37        |  25     |
+|            With |  37        |  10     |
+|-----------------|------------|---------|
+Statistical Description:  Contingency table showing the co-occurrence of disease and extreme weather according to reponses to question 14b.
+
+|                 |            |         |
+|-----------------|------------|---------|
+|                 |    Queen Problems    |
+|         Disease | Without    |  With   |
+|         Without |  56        |   6     |
+|            With |  41        |   6     |
+|-----------------|------------|---------|
+Statistical Description:  Contingency table showing the co-occurrence of disease and queen problems according to reponses to question 14b.
+
+|                 |            |         |
+|-----------------|------------|---------|
+|                 |    Starvation        |
+|         Disease | Without    |  With   |
+|         Without |  50        |  12     |
+|            With |  41        |   6     |
+|-----------------|------------|---------|
+Statistical Description:  Contingency table showing the co-occurrence of disease and starvation according to reponses to question 14b.
+
+|                 |            |         |
+|-----------------|------------|---------|
+|                 |   Queen Problems     |
+| Extreme Weather | Without    |  With   |
+|         Without |  63        |  11     |
+|            With |  34        |   1     |
+|-----------------|------------|---------|
+Statistical Description:  Contingency table showing the co-occurrence of extreme weather and queen problems according to reponses to question 14b.
+
+|                 |            |         |
+|-----------------|------------|---------|
+|                 |     Starvation       |
+| Extreme Weather | Without    |  With   |
+|         Without |  60        |  14     |
+|            With |  31        |   4     |
+|-----------------|------------|---------|
+Statistical Description:  Contingency table showing the co-occurrence of extreme weather and starvation according to reponses to question 14b.
+
+|                 |            |         |
+|-----------------|------------|---------|
+|                 |     Starvation       |
+|  Queen Problems | Without    |  With   |
+|         Without |  80        |  17     |
+|            With |  11        |   1     |
+|-----------------|------------|---------|
+Statistical Description:  Contingency table showing the co-occurrence of queen problems and starvation according to reponses to question 14b.
+
 ### Did you migrate any of your colonies at least once for honey production or pollination or other reasons in 2017?
 
 ```r
-factorVariableHistogram(x$Migrate,c("Yes","No"),0.75,1.33,0.04,"Did you migrate any of your colonies at least once\nfor honey production or pollination or other reasons in 2017?")
+factorVariableHistogram(x$Migrate,c("Yes","No"),0.75,1.33,0.04,"Did you migrate any of your colonies at least once\nfor honey production or pollination or other reasons in 2017?","Histogram of responses to question 15.")
 ```
 
 ![](README_files/figure-html/migrate-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 15."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -616,12 +734,13 @@ factorVariableHistogram(x$Migrate,c("Yes","No"),0.75,1.33,0.04,"Did you migrate 
 ### Total Honey Production
 
 ```r
-quantitativeVariableHistogram(x$Honey_kg,"Kilograms",0.75,1.33,0.04,"Honey Production")
+quantitativeVariableHistogram(x$Honey_kg,"Kilograms",0.75,1.33,0.04,"Honey Production","Histogram of responses to question 16.")
 ```
 
 ![](README_files/figure-html/honey-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 16."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 108
 ## [1] "Mean"
@@ -633,12 +752,13 @@ quantitativeVariableHistogram(x$Honey_kg,"Kilograms",0.75,1.33,0.04,"Honey Produ
 ### Approximately what proportion of brood combs did you replace with comb foundation per colony in 2017?
 
 ```r
-factorVariableHistogram(x$Broodcomb_rep,c("0%","1-30%","31-50%"),0.75,1.33,0.04,"Approximately what proportion of brood combs\ndid you replace with comb foundation per colony in 2017?")
+factorVariableHistogram(x$Broodcomb_rep,c("0%","1-30%","31-50%"),0.75,1.33,0.04,"Approximately what proportion of brood combs\ndid you replace with comb foundation per colony in 2017?","Histogram of responses to question 17.")
 ```
 
 ![](README_files/figure-html/brood_combs-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 17."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -652,12 +772,13 @@ factorVariableHistogram(x$Broodcomb_rep,c("0%","1-30%","31-50%"),0.75,1.33,0.04,
 ### Do you keep your bees in an area where Varroa has still not been detected?
 
 ```r
-factorVariableHistogram(x$Varroa_not_det,c("Yes","No","Don't Know"),0.75,1.33,0.04,"Do you keep your bees in an area\nwhere Varroa has still not been detected?")
+factorVariableHistogram(x$Varroa_not_det,c("Yes","No","Don't Know"),0.75,1.33,0.04,"Do you keep your bees in an area\nwhere Varroa has still not been detected?","Histogram of responses to question 18.")
 ```
 
 ![](README_files/figure-html/varroa-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 18."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -671,12 +792,13 @@ factorVariableHistogram(x$Varroa_not_det,c("Yes","No","Don't Know"),0.75,1.33,0.
 ### Have you monitored your colonies for Varroa during the period April 2017-April 2018?
 
 ```r
-factorVariableHistogram(x$Varroa_monitor,c("Yes","No","Don't Know / Not Applicable"),0.75,1.33,0.04,"Have you monitored your colonies for Varroa\nduring the period April 2017-April 2018?")
+factorVariableHistogram(x$Varroa_monitor,c("Yes","No","Don't Know / Not Applicable"),0.75,1.33,0.04,"Have you monitored your colonies for Varroa\nduring the period April 2017-April 2018?","Histogram of responses to question 19.")
 ```
 
 ![](README_files/figure-html/Varroa_monitor-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 19."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -690,12 +812,13 @@ factorVariableHistogram(x$Varroa_monitor,c("Yes","No","Don't Know / Not Applicab
 ### Have you treated your colonies against Varroa during the period April 2017-April 2018?
 
 ```r
-factorVariableHistogram(x$Varroa_treated,c("Yes","No","Don't Know / Not Applicable"),0.75,1.33,0.04,"Have you treated your colonies against Varroa\nduring the period April 2017-April 2018?")
+factorVariableHistogram(x$Varroa_treated,c("Yes","No","Don't Know / Not Applicable"),0.75,1.33,0.04,"Have you treated your colonies against Varroa\nduring the period April 2017-April 2018?","Histogram of responses to question 20.")
 ```
 
 ![](README_files/figure-html/Varroa_treated-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 20."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -741,7 +864,7 @@ tauValue <- c(tauValue,sum(x$Tau.fl_Apr18[!is.na(x$Tau.fl_Apr18)]))
 tauValueMx <- max(tauValue)
 offset <- 0.05
 months <- c("Apr17","May17","Jun17","Jul17","Aug17","Spt17","Oct17","Nov17","Dec17","Jan18","Feb18","Mar18","Apr18")
-plt <- barplot(monthValue,names.arg=months,cex.names=0.6)
+plt <- barplot(monthValue,names.arg=months,cex.names=0.6,main="Responses to the First Part of Question 21")
 monthValue2 <- monthValue + offset*monthValueMx
 for (i in seq(1,length(monthValue2))) { if(monthValue2[i]>0.95*monthValueMx) { monthValue2[i]<-0.95*(monthValue2[i]-offset*monthValueMx) } }
 text(plt,monthValue2,monthValue,col="blue")
@@ -750,7 +873,15 @@ text(plt,monthValue2,monthValue,col="blue")
 ![](README_files/figure-html/months-1.png)<!-- -->
 
 ```r
-plt <- barplot(tauValue,names.arg=months,cex.names=0.6)
+print(paste("Statistical Description:","Histogram of responses to the first part of question 21."))
+```
+
+```
+## [1] "Statistical Description: Histogram of responses to the first part of question 21."
+```
+
+```r
+plt <- barplot(tauValue,names.arg=months,cex.names=0.6,main="Responses to the Second Part of Question 21")
 tauValue2 <- tauValue + offset*tauValueMx
 for (i in seq(1,length(tauValue2))) { if(tauValue2[i]>0.95*tauValueMx) { tauValue2[i]<-0.95*(tauValue2[i]-offset*tauValueMx) } }
 text(plt,tauValue2,tauValue,col="blue")
@@ -758,15 +889,24 @@ text(plt,tauValue2,tauValue,col="blue")
 
 ![](README_files/figure-html/months-2.png)<!-- -->
 
+```r
+print(paste("Statistical Description:","Histogram of responses to the second part of question 21."))
+```
+
+```
+## [1] "Statistical Description: Histogram of responses to the second part of question 21."
+```
+
 ### Have you noticed bees with crippled/deformed wings in your colonies?
 
 ```r
-factorVariableHistogram(x$Def_wings,c("Not at all","To a limited extent","To a large extent"),0.75,1,0.04,"Have you noticed bees with crippled/deformed wings in your colonies?")
+factorVariableHistogram(x$Def_wings,c("Not at all","To a limited extent","To a large extent"),0.75,1,0.04,"Have you noticed bees with crippled/deformed wings in your colonies?","Histogram of responses to question 22.")
 ```
 
 ![](README_files/figure-html/wings-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 22."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -780,12 +920,13 @@ factorVariableHistogram(x$Def_wings,c("Not at all","To a limited extent","To a l
 ### Which of the following measures apply for the majority of your beekeeping - Screened bottom board
 
 ```r
-factorVariableHistogram(x$Screened_bottom_brd,c("Yes","No","Don't know"),0.75,1,0.04,"Which of the following measures apply for the majority of your beekeeping?\n - Screened bottom board")
+factorVariableHistogram(x$Screened_bottom_brd,c("Yes","No","Don't know"),0.75,1,0.04,"Which of the following measures apply for the majority of your beekeeping?\n - Screened bottom board","Histogram of responses to question 23a.")
 ```
 
 ![](README_files/figure-html/measures_a-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 23a."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -799,12 +940,13 @@ factorVariableHistogram(x$Screened_bottom_brd,c("Yes","No","Don't know"),0.75,1,
 ### Which of the following measures apply for the majority of your beekeeping - Insulated Hives
 
 ```r
-factorVariableHistogram(x$Ins_hives,c("Yes","No","Don't know"),0.75,1,0.04,"Which of the following measures apply for the majority of your beekeeping?\n - Insulated Hives")
+factorVariableHistogram(x$Ins_hives,c("Yes","No","Don't know"),0.75,1,0.04,"Which of the following measures apply for the majority of your beekeeping?\n - Insulated Hives","Histogram of responses to question 23b.")
 ```
 
 ![](README_files/figure-html/measures_b-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 23b."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -818,12 +960,13 @@ factorVariableHistogram(x$Ins_hives,c("Yes","No","Don't know"),0.75,1,0.04,"Whic
 ### Which of the following measures apply for the majority of your beekeeping - Plastic Hives
 
 ```r
-factorVariableHistogram(x$Plastic_hives,c("Yes","No","Don't know"),0.75,1,0.04,"Which of the following measures apply for the majority of your beekeeping?\n - Plastic Hives")
+factorVariableHistogram(x$Plastic_hives,c("Yes","No","Don't know"),0.75,1,0.04,"Which of the following measures apply for the majority of your beekeeping?\n - Plastic Hives","Histogram of responses to question 23c.")
 ```
 
 ![](README_files/figure-html/measures_c-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 23c."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -837,12 +980,13 @@ factorVariableHistogram(x$Plastic_hives,c("Yes","No","Don't know"),0.75,1,0.04,"
 ### Which of the following measures apply for the majority of your beekeeping - Certified Organic Beekeeping
 
 ```r
-factorVariableHistogram(x$Cert_organic_beek,c("Yes","No","Don't know"),0.75,1,0.04,"Which of the following measures apply for the majority of your beekeeping?\n - Certified Organic Beekeeping")
+factorVariableHistogram(x$Cert_organic_beek,c("Yes","No","Don't know"),0.75,1,0.04,"Which of the following measures apply for the majority of your beekeeping?\n - Certified Organic Beekeeping","Histogram of responses to question 23d.")
 ```
 
 ![](README_files/figure-html/measures_d-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 23d."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -856,12 +1000,13 @@ factorVariableHistogram(x$Cert_organic_beek,c("Yes","No","Don't know"),0.75,1,0.
 ### Which of the following measures apply for the majority of your beekeeping - Varroa Tolerant Stock
 
 ```r
-factorVariableHistogram(x$Varroa_tol_stock,c("Yes","No","Don't know"),0.75,1,0.04,"Which of the following measures apply for the majority of your beekeeping?\n - Varroa Tolerant Stock")
+factorVariableHistogram(x$Varroa_tol_stock,c("Yes","No","Don't know"),0.75,1,0.04,"Which of the following measures apply for the majority of your beekeeping?\n - Varroa Tolerant Stock","Histogram of responses to question 23e.")
 ```
 
 ![](README_files/figure-html/measures_e-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 23e."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -875,12 +1020,13 @@ factorVariableHistogram(x$Varroa_tol_stock,c("Yes","No","Don't know"),0.75,1,0.0
 ### Which of the following measures apply for the majority of your beekeeping - Small Brood Cell Size (5.1 mm or less)
 
 ```r
-factorVariableHistogram(x$Small_brood_cell_size,c("Yes","No","Don't know"),0.75,1,0.04,"Which of the following measures apply for the majority of your beekeeping?\n - Small Brood Cell Size (5.1 mm or less)")
+factorVariableHistogram(x$Small_brood_cell_size,c("Yes","No","Don't know"),0.75,1,0.04,"Which of the following measures apply for the majority of your beekeeping?\n - Small Brood Cell Size (5.1 mm or less)","Histogram of responses to question 23f.")
 ```
 
 ![](README_files/figure-html/measures_f-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 23f."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -894,12 +1040,13 @@ factorVariableHistogram(x$Small_brood_cell_size,c("Yes","No","Don't know"),0.75,
 ### Which of the following measures apply for the majority of your beekeeping - Natural Comb (Without Foundation)
 
 ```r
-factorVariableHistogram(x$Nat_comb,c("Yes","No","Don't know"),0.75,1,0.04,"Which of the following measures apply for the majority of your beekeeping?\n - Natural Comb (Without Foundation)")
+factorVariableHistogram(x$Nat_comb,c("Yes","No","Don't know"),0.75,1,0.04,"Which of the following measures apply for the majority of your beekeeping?\n - Natural Comb (Without Foundation)","Histogram of responses to question 23g.")
 ```
 
 ![](README_files/figure-html/measures_g-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 23g."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -913,12 +1060,13 @@ factorVariableHistogram(x$Nat_comb,c("Yes","No","Don't know"),0.75,1,0.04,"Which
 ### Which of the following measures apply for the majority of your beekeeping - Purchase Wax from Outside Own Operation
 
 ```r
-factorVariableHistogram(x$Purchase_wax,c("Yes","No","Don't know"),0.75,1,0.04,"Which of the following measures apply for the majority of your beekeeping?\n - Purchase Wax from Outside Own Operation")
+factorVariableHistogram(x$Purchase_wax,c("Yes","No","Don't know"),0.75,1,0.04,"Which of the following measures apply for the majority of your beekeeping?\n - Purchase Wax from Outside Own Operation","Histogram of responses to question 23h.")
 ```
 
 ![](README_files/figure-html/measures_h-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 23h."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -932,12 +1080,13 @@ factorVariableHistogram(x$Purchase_wax,c("Yes","No","Don't know"),0.75,1,0.04,"W
 ### Are there pests which are a threat to the honey bees in your apiary/apiaries?
 
 ```r
-factorVariableHistogram(x$Pests,c("Yes","No","Don't know"),0.75,1,0.04,"Are there pests which are a threat to the honey bees in your apiary/apiaries?")
+factorVariableHistogram(x$Pests,c("Yes","No","Don't know"),0.75,1,0.04,"Are there pests which are a threat to the honey bees in your apiary/apiaries?","Histogram of responses to question 24.")
 ```
 
 ![](README_files/figure-html/pests-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 24."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -959,12 +1108,13 @@ for (i in seq(1,length(pestnames))) {
 pestnames2 <- pestnames[pestnames>" "]
 pestnames <- as.factor(pestnames)
 pestnames2 <- as.factor(pestnames2)
-factorVariableHistogram(pestnames2,c("bee wolf","hornet","varroa"),0.75,1,0.04,"What pests are a threat to the honey bees in your apiary/apiaries?")
+factorVariableHistogram(pestnames2,c("bee wolf","hornet","varroa"),0.75,1,0.04,"What pests are a threat to the honey bees in your apiary/apiaries?","Histogram of responses to question 24a.")
 ```
 
 ![](README_files/figure-html/pest_names-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 24a."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 84
 ## [1] "Histogram Categories and Frequencies"
@@ -978,12 +1128,13 @@ factorVariableHistogram(pestnames2,c("bee wolf","hornet","varroa"),0.75,1,0.04,"
 ### Do you protect your colonies from the weather?
 
 ```r
-factorVariableHistogram(x$Protect_weather,c("Yes","No"),0.75,1,0.04,"Do you protect your colonies from the weather?")
+factorVariableHistogram(x$Protect_weather,c("Yes","No"),0.75,1,0.04,"Do you protect your colonies from the weather?","Histogram of responses to question 25.")
 ```
 
 ![](README_files/figure-html/protect_weather-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 25."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -997,12 +1148,13 @@ factorVariableHistogram(x$Protect_weather,c("Yes","No"),0.75,1,0.04,"Do you prot
 ### What strain/race of bees do you mostly keep in your apiary/apiaries?
 
 ```r
-factorVariableHistogram(x$Bee_race[!is.na(x$Bee_race)],c("Local hybrid of no specific race","Yemeni honey bee","Italian honey bee"),0.75,1,0.04,"What strain/race of bees do you mostly keep in your apiary/apiaries?")
+factorVariableHistogram(x$Bee_race[!is.na(x$Bee_race)],c("Local hybrid of no specific race","Yemeni honey bee","Italian honey bee"),0.75,1,0.04,"What strain/race of bees do you mostly keep in your apiary/apiaries?","Histogram of responses to question 26.")
 ```
 
 ![](README_files/figure-html/Bee_race-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 26."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 108
 ## [1] "Histogram Categories and Frequencies"
@@ -1016,12 +1168,13 @@ factorVariableHistogram(x$Bee_race[!is.na(x$Bee_race)],c("Local hybrid of no spe
 ### Do you replace queens?
 
 ```r
-factorVariableHistogram(x$Replace_queens,c("Yes","No"),0.75,1,0.04,"Do you replace queens?")
+factorVariableHistogram(x$Replace_queens,c("Yes","No"),0.75,1,0.04,"Do you replace queens?","Histogram of responses to question 27.")
 ```
 
 ![](README_files/figure-html/Replace_queens-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 27."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
@@ -1048,15 +1201,24 @@ text(plt,y-maxy*0.02,y,col="blue")
 
 ![](README_files/figure-html/Replace_queens_when-1.png)<!-- -->
 
+```r
+print(paste("Statistical Description:","Histogram of responses to question 27."))
+```
+
+```
+## [1] "Statistical Description: Histogram of responses to question 27."
+```
+
 ### Do you feel that you have any needs for training or support in your beekeeping?
 
 ```r
-factorVariableHistogram(x$Training_need,c("No"),0.75,1,0.04,"Do you feel that you have any needs for training or support in your beekeeping?")
+factorVariableHistogram(x$Training_need,c("No"),0.75,1,0.04,"Do you feel that you have any needs for training or support in your beekeeping?","Histogram of responses to question 28.")
 ```
 
 ![](README_files/figure-html/Training_need-1.png)<!-- -->
 
 ```
+## [1] "Statistical Description: Histogram of responses to question 28."
 ## [1] "Number of Non-Missing Data Items"
 ## [1] 109
 ## [1] "Histogram Categories and Frequencies"
